@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="cart.js"></script>
+    <link rel="stylesheet" href="collections.css">
+    <link rel="icon" href="./images/romance.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>PASSIONATE READERS / COLLECTIONS</title>
+</head>
+<body>
+
+    <div class="container">
+        <!-- navbar starts here -->
+     <div class="navbar">
+        <div class="logo">
+            <img src="./images/romance.png" alt="">
+            <h1>passionate readers</h1>
+        </div>
+        <div class="navitems active">
+          <div class="search-box">
+            <input type="search" class="search" placeholder="Search here...">
+        </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collections.html">collections</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="about.html">about</a></li>
+            </ul>
+            <button class="btncart"><a href="#cart"><img src="./images/grocery-store.png" alt=""></a></button>
+        </div>
+    </div>
+
+    <div class="contents">
+        <div class="collections">
+            <h1>browse our collections</h1>
+            <h2>Adventure collections</h2>
+
+          <div class="cartcon">
+            
+            <div class="item" id="item1">
+              <img src="./images/adventurebook1.jpg" alt="Item 1">
+              <p> INTO THE WILD</p>
+              <p>Price: ₹400.00</p>
+              <button onclick="addItem('INTO THE WILD', 299.00)">Add to Cart</button>
+            </div>
+
+            <div class="item" id="item2">
+              <img src="./images/adventurebook2.jpg" alt="Item 1">
+              <p> HARRY POTTER</p>
+              <p>Price: ₹250.00</p>
+              <button onclick="addItem('HARRY POTTER', 250.00)">Add to Cart</button>
+            </div>
+
+            <div class="item" id="item3">
+              <img src="./images/adventurebook3.jpg" alt="Item 1">
+              <p> TREASURE ISLAND</p>
+              <p>Price: ₹1000.00</p>
+              <button onclick="addItem('TREASURE ISLAND', 1000.00)">Add to Cart</button>
+            </div>
+
+            <div class="item" id="item4">
+              <img src="./images/adventurebook5.jpg" alt="Item 1">
+              <p> AOHF</p>
+              <p>Price: ₹450.00</p>
+              <button onclick="addItem('AOHF', 450.00)">Add to Cart</button>
+            </div>
+
+            <div class="item" id="item5">
+              <img src="./images/adventurebook6.jpg" alt="Item 1">
+              <p> WILD</p>
+              <p>Price: ₹300.00</p>
+              <button onclick="addItem('WILD', 300.00)">Add to Cart</button>
+            </div>
+
+            <div class="item" id="item6">
+              <img src="./images/adventurebook7.jpg" alt="Item 1">
+              <p> THE HOBBIT</p>
+              <p>Price: ₹1000.00</p>
+              <button onclick="addItem('THE HOBBIT', 1000.00)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="collections">
+          <!-- <h1>browse our collections</h1> -->
+          <h2>Romance collections</h2>
+
+        <div class="cartcon">
+          
+          <div class="item" id="item1">
+            <img src="./images/romancebook1.jpg" alt="Item 1">
+            <p> PRIDE AND PREJUDICE</p>
+            <p>Price: ₹270.00</p>
+            <button onclick="addItem('PRIDE AND PREJUDICE', 270.00)">Add to Cart</button>
+          </div>
+
+          <div class="item" id="item2">
+            <img src="./images/romancebook2.jpg" alt="Item 2">
+            <p> IT ENDS WITH US</p>
+            <p>Price: ₹340.00</p>
+            <button onclick="addItem('IT ENDS WITH US', 340.00)">Add to Cart</button>
+          </div>
+
+          <div class="item" id="item3">
+            <img src="./images/romancebook3.jpg" alt="Item 3">
+            <p> THE HATING GAME</p>
+            <p>Price: ₹200.00</p>
+            <button onclick="addItem('THE HATING GAME', 200.00)">Add to Cart</button>
+          </div>
+
+          <div class="item" id="item4">
+            <img src="./images/romancebook4.jpg" alt="Item 4">
+            <p> OUTLANDER</p>
+            <p>Price: ₹650.00</p>
+            <button onclick="addItem('OUTLANDER', 650.00)">Add to Cart</button>
+          </div>
+
+          <div class="item" id="item5">
+            <img src="./images/romancebook5.jpg" alt="Item 5">
+            <p> UGLY LOVE</p>
+            <p>Price: ₹220.00</p>
+            <button onclick="addItem('UGLY LOVE', 220.00)">Add to Cart</button>
+          </div>
+
+          <div class="item" id="item6">
+            <img src="./images/romancebook6.jpg" alt="Item 6">
+            <p>THE NOTEBOOK</p>
+            <p>Price: ₹.00</p>
+            <button onclick="addItem('THE NOTEBOOK', 360.00)">Add to Cart</button>
+          </div>
+      </div>
+
+      <div class="message">
+        <p><marquee behavior="" direction="right">MORE COLLECTIONS OF DIFFRENT GENRES WILL BE ADDED SOON</marquee></p>
+      </div>
+
+        <section>
+            <div class="cart">
+                <div class="cart" id="cart">
+                    <h2>Shopping Cart</h2>
+                 <div id="cart-container">
+                   <!-- Cart items will be dynamically added here -->
+                 </div>
+                  <div id="total">Total: ₹0.00</div>
+                   <button class="checkout">checkout</button>
+                 </div>
+            </div>
+        </section>
+    </div>
+    
+     <!-- footer starts here -->
+     <div class="footer">
+      <div class="footer-logo">
+          <img src="./images/romance.png" alt="">
+          <h1>PASSIONATE READERS</h1>
+      </div>
+
+      <div class="social-links">
+          <h3>follow us on</h3>
+          <div class="soc-logos">
+              <img src="./images/instagram.png" alt="">
+              <img src="./images/whatsapp.png" alt="">
+              <img src="./images/twitter.png" alt="">
+          </div>
+      </div>
+
+      <div class="quick-links">
+          <div class="title">
+              <h3>quick links</h3>
+          </div>
+          <a href="#">privacy policy</a>
+          <a href="#">terms and conditions</a>
+          <a href="#">return and replacement policy</a>
+      </div>
+
+      <div class="account-links">
+          <div class="title">
+              <h3>my account</h3>
+          </div>
+          <a href="#">account details</a>
+          <a href="#">my orders</a>
+          <a href="#">track your order</a>
+      </div>
+  </div>
+  <!-- footer ends here -->
+  
+
+  <!-- quote section starts here -->
+  <div class="quote">
+      <h4>
+          - the more you search, the less you suffer. 
+      </h4>
+  </div>
+<!-- quote section ends here -->
+</div>
+
+</div>
+
+     
+</body>
+</html>
