@@ -180,13 +180,14 @@
     padding: 20px 0;
 }
 section{
-    width: 95%;
+    width: 100vw;
     margin: auto;
     padding-bottom: 150px;
 }
 .categories{
     background-image: linear-gradient(to right, #051937, #0a152d, #0c1024, #090a1b, #040411);
     margin-top: 3%;
+    width:100vw;
 }
 .cat-header h2{
     font-size: 38px;
