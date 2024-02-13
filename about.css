@@ -7,6 +7,10 @@
     --font-inter: Inter;
     --font-gidugu: Gidugu;
   }
+body{
+    margin:0;
+    padding:0;
+}
 .container{
     margin: 0;
     padding: 0;
